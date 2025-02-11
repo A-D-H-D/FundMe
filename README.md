@@ -1,66 +1,53 @@
-## Foundry
+# 🏗️🔗 Foundry Fund Me 💰
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A simple 💡 smart contract that allows 👥 to 💸 and 💳 using 🏗️ Foundry and 🔗 Chainlink 💰 feeds.
 
-Foundry consists of:
+## ✨ Features ✨
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- Accepts ⛽ ETH 💰
+- Uses 🔗 Chainlink 💰 feeds for 💲 conversion
+- Allows only the 👑 to 💳
+- ✅ Fully tested with 🏗️
 
-## Documentation
+## 📌 Prerequisites 📌
 
-https://book.getfoundry.sh/
+- Install 🏗️
+- Install 📦: `forge install`
 
-## Usage
 
-### Build
 
-```shell
-$ forge build
+# Install 📦
+forge install
 ```
 
-### Test
+## 🛠️ Usage 🛠️
 
-```shell
-$ forge test
+### 💸 Fund the contract 💸
+
+```sh
+forge script script/Interactions.s.sol:FundFundMe --fork-url <RPC_URL> --broadcast
 ```
 
-### Format
+### 💳 Withdraw (only 👑)
 
-```shell
-$ forge fmt
+
+## 🔬 Testing 🔬
+
+Run 🧪 with:
+
+```sh
+forge test
 ```
 
-### Gas Snapshots
+## 🚀 Deployment 🚀
 
-```shell
-$ forge snapshot
+Deploy 📜 with:
+
+```sh
+forge script script/DeployFundMe.s.sol --fork-url <RPC_URL> --broadcast
 ```
 
-### Anvil
+## 📜 License 📜
 
-```shell
-$ anvil
-```
+🔓 MIT
 
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
